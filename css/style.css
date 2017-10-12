@@ -55,14 +55,21 @@ header {
 	float: left;
 	
 	width: 35%;
+  
+  background: #ffffff;
+  border: 3px solid #018dd2;
+  border-radius: 5px;
 	
 	text-align: center;
+  
+  opacity: 0.95;
 }
 
 .main-logo {
-  min-width: 300px;
-  min-height: 165px;
+  min-width: 250px;
+  min-height: 115px;
   margin-bottom: 25px;
+  margin-top: 20px;
   
   opacity: 0.95;
 }
@@ -78,7 +85,7 @@ header {
 .company-specific {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 
 	font-size: 100%;
 	line-height: 21px;
@@ -91,7 +98,7 @@ header {
 	
 	width: 65%;
 	
-	color: #5a5a5a;
+	color: #ffffff;
 }
 
 .main-idea {
@@ -144,7 +151,7 @@ header {
 }
 
 .advantages {
-	list-style-position: inside
+  list-style-position: inside;
 }
 
 .advantages li {
@@ -156,6 +163,9 @@ header {
 .facilities {
 	padding-top: 80px;
 	padding-bottom: 80px;
+  
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
 }
 
 .main-facilities {
