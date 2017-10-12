@@ -51,6 +51,14 @@ header {
   background-size: cover;
 }
 
+.main-atributes {
+	float: left;
+	
+	width: 35%;
+	
+	text-align: center;
+}
+
 .main-logo {
   min-width: 300px;
   min-height: 165px;
@@ -70,7 +78,7 @@ header {
 .company-specific {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 100px;
+	margin-bottom: 25px;
 
 	font-size: 100%;
 	line-height: 21px;
@@ -78,15 +86,98 @@ header {
   color: #919394;
 }
 
-.company-email {
-  padding: 0 5px;
-  
-  background: #018dd2;
-  border-radius: 3px;
-  
-  color: #ffffff;
-  
-  cursor: pointer;
+.main-description {
+	float: right;
+	
+	width: 65%;
+	
+	color: #5a5a5a;
+}
+
+.main-idea {
+	margin-bottom: 30px;
+	padding: 0 15px;
+	
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.main-idea-content {
+	padding: 0 15px;
+	
+	line-height: 24px;
+	font-weight: 600;
+}
+
+.about-company {
+	padding-top: 80px;
+	padding-bottom: 75px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+	
+	font-family: "Alien-Encounters-Regular_0.ttf", "Arial", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+  color: #018dd2;
+}
+
+.about-company p {
+	margin-bottom: 30px;
+	
+	line-height: 24px;
+	font-weight: 500;
+	color: #5a5a5a;
+}
+
+.advantages-title {
+	display: block;
+	
+	margin-top: 90px;
+	margin-bottom: 30px;
+	
+	font-size: 18px;
+	font-weight: 600;
+  color: #015ba1;
+}
+
+.advantages {
+	list-style-position: inside
+}
+
+.advantages li {
+	margin-bottom: 5px;
+	
+	color: #5a5a5a;
+}
+
+.facilities {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.main-facilities {
+	list-style-type: none;
+	text-align: center;
+}
+
+.main-facilities li {
+	display: inline-block;
+	width: 310px;
+	
+	line-height: 24px;
+	font-weight: 500;
+	color: #5a5a5a;
+}
+
+.main-facilities img {
+	margin-bottom: 15px;
+}
+
+.facilitie {
+	display: block;
 }
 
 @media screen and (max-width: 400px) {
