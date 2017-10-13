@@ -264,32 +264,35 @@ p {
 }
 
 .contact-list {
-	list-style-type: none;
-	
-	text-align: center;
+  list-style-type: none;
 }
 
 .contact-list li {
 	display: inline-block;
-	width: calc(940px / 3);
+	width: calc(100% / 3 - 10px);
+  margin-right: 10px;
 	margin-bottom: 50px;
 	
 	text-align: left;
 	vertical-align: top;
 }
 
+.contact-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
 .worker {
-	width: 300px;
+	width: 100%;
 	min-height: 220px;
-	margin: 0;
-	padding: 15px;
 	
-	background: #018dd2;
+  border: 1px solid gray;
+  border-radius: 3px;
 	
 	list-style-type: none;
 }
 
 .worker li {
+  display: block;
 	width: 100%;
 	margin: 0;
 	padding-bottom: 3px;
@@ -299,6 +302,7 @@ p {
 
 .worker .worker-post {
 	margin-bottom: 20px;
+  padding: 15px;
 	
 	font-size: 21px;
 	font-weight: 600;
@@ -309,11 +313,6 @@ p {
 
 .worker .worker-name {
 	font-weight: 600;
-	color: #ffffff;
-}
-
-.worker .worker-phone {
-	color: #ffffff;
 }
 
 .worker .lighter-text {
@@ -321,14 +320,20 @@ p {
 }
 
 .worker .worker-mail {
-	color: #ffffff;
 	text-decoration: underline;
 }
 
-.worker-skype {
-	color: #ffffff;
-}
-
-@media screen and (max-width: 400px) {
-	
+@media screen and (max-width: 980px) {
+	.contact-list li {
+    width: calc(100% / 2 - 10px);
+    text-align: center;
+  }
+  
+   .contact-list li:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .worker li {
+    width: 100%;
+  }
 }
