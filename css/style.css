@@ -39,11 +39,21 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 /* header */
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
     
+  height: 100vh;
   min-height: 100vh;
 	padding: 20px 0;
   
@@ -65,7 +75,8 @@ header {
   
 	border: 3px solid #323233;
   border-radius: 15px;
-	box-shadow: 0 0 0 3px #018dd2; 
+	-webkit-box-shadow: 0 0 0 3px #018dd2;
+	        box-shadow: 0 0 0 3px #018dd2; 
 	
 	text-align: center;
   
