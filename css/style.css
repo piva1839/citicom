@@ -60,6 +60,7 @@ header {
 	background-position: right;
 }
 
+/*
 .main-menu {
   position: fixed;
   left: 0;
@@ -113,22 +114,23 @@ nav {
 .main-navigation a:hover {
   color: #ffffff;
 }
+*/
 
 .menu {
 	position: fixed;
   top: 0;
-	right: -210px;
+	right: -250px;
 	z-index: 2;
   
   display: block;
   list-style-type: none;
-	width: 210px;
+	width: 250px;
 	height: 100%;
   margin: 0;
 	padding: 18px 10px 0 10px;
   
 	background: url("../img/bg.jpg") no-repeat;
-  border-left: 2px solid #018dd2;
+  border-left: 1px solid #018dd2;
   
 	text-align: right;
   
@@ -164,7 +166,7 @@ nav {
 	right: 45px;
   z-index: 3;
   
-  display: none;
+  /* display: none; */
   width: 40px;
   padding: 5px;
 	
@@ -219,15 +221,41 @@ nav {
 	transform: rotate(-45deg);
 }
 
+.to-header {
+	position: fixed;
+	top: 35px;
+	right: 90px;
+  z-index: 3;
+	
+	width: 40px;
+	height: 37px;
+	
+	background: #018dd2 url("../img/arrowtop.png") no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  
+  cursor: pointer;
+  
+	transition: 0.4s;
+}
+
+.hidden-menu:checked ~ .to-header {
+	right: 205px;
+}
+
 @media screen and (max-width: 750px) {
-  .main-menu,
+  /*
+	.main-menu,
   nav {
     display: none;
   }
-  
+	
   .burger {
     display: block;
   }
+	*/
 }
 
 .main-atributes {
@@ -259,9 +287,9 @@ nav {
 }
 
 .company-name {
-	font-family: "Alien-Encounters-Regular_0.ttf", "Arial", sans-serif;
-	font-size: 30px;
-	font-weight: 400;
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
   color: #018dd2;
 }
 
