@@ -1,6 +1,9 @@
-$(document).ready(function(){
-      var mainNavigation = $(".main-navigation");
-      $(".main-navigation a").click(function(){
-      mainNavigation.hide(500);
-      });
-      });
+$(function() {
+  $(".menu,a").click(function() {
+    $("#act").prop("checked",false);
+    $(".menu").one("right","-250px");
+    $(".burger").css("right","45px");
+    $(".to-header").css("right","90px");  
+  });
+});
+
