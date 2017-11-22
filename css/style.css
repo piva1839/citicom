@@ -257,7 +257,7 @@ header {
 
 .about-company {
 	padding-top: 80px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 }
 
 .section-title {
@@ -475,48 +475,42 @@ p {
 
 .contacts {
 	padding-top: 80px;
-	padding-bottom: 30px;
+	padding-bottom: 1px;
   
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
 }
 
 .contact-list {
+	width: 100%;
+	
   list-style-type: none;
-}
-
-.contact-list li {
-	display: inline-block;
-	width: calc(100% / 3 - 10px);
-  margin-right: 10px;
-	margin-bottom: 50px;
 	
 	text-align: center;
-	vertical-align: top;
 }
 
-.contact-list li:nth-child(3n) {
-  margin-right: 0;
+.contact-list {
+	margin-bottom: 40px;
+	
+	text-align: center;
 }
 
 .worker-post {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
   padding: 15px;
 	
 	font-size: 14px;
 	font-weight: 600;
 	color: #015ba1;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
-.mail {
-  color: #000000;
-  text-transform: lowercase;
+.footer {
+	background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
 }
 
 .footer-inner {
-  padding-top: 18px;
+  padding: 18px 0 15px;
 }
 
 .advertising {
@@ -531,6 +525,10 @@ p {
   width: 50%;
   
   text-align: right;
+}
+
+.autor {
+	color: red;
 }
 
 @media screen and (max-width: 1265px) {
@@ -609,7 +607,7 @@ p {
 	
 	.about-company {
 		padding-top: 50px;
-		padding-bottom: 60px;
+		padding-bottom: 0px;
 	}
 	
 	.section-title {
@@ -639,15 +637,6 @@ p {
 	.contact-list li:nth-child(2n) {
     margin-right: 0;
   }
-	
-	.worker {
-		width: 100%;
-		min-height: 220px;
-		
-		border: none;
-		border-bottom: 2px solid gray;
-		border-radius: 0;
-	}
 	
 	.main-facilities li {
 		display: inline-block;
